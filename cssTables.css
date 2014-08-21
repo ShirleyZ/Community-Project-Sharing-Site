@@ -1,0 +1,56 @@
+/* CSS for records, rows and columns */
+/* !! GLOBAL NOTES !! */
+/* - Need to add <br clear="both"> at the end of each row */
+
+/* DECORATIVE TABLE CLASSES */
+.cssTableGray {
+  background-color: #BFBFBF;
+}
+
+.cssTableHeader {
+  background-color: gray;
+  border-bottom: 1px solid black;
+}
+
+.cssTableBorderBottom {
+  border-bottom: 1px solid black;
+}
+
+/* TYPICAL TABLE COMPONENTS */
+.cssTable {
+  /* Set your own width here */
+  width: 500px;
+  border: 1px solid black;  
+}
+
+.cssRow {
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.cssCol1 {
+  width: 98%;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0x;
+  float: left;
+}
+
+.cssCol2 {
+  width: 48%;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0px;
+  float: left;
+  
+}
+
+.cssCol3 {
+  width: 30%;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0px;
+  float: left;
+}

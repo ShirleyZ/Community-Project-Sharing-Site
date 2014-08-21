@@ -1,0 +1,38 @@
+// KNOWN BUGS
+x: broke
+-: workable
+~: maybe fixed?
+o: fixed
+
+//- search.asp
+- If no projects show up, it's still got the js
+    from manage.asp
+	 
+//- editUser.asp
+x users can't edit
+	 - problem in nav.asp, fixed just upload
+	 - retcon it isn't fixed, doesn't work even if 
+		correct url is typed in
+
+//- addProjXML.js
+x If you click "add" on the manage.asp top bar, 
+    the counter doesn't reset itself
+x Adding a new field wipes the info you have in 
+    your previous fields
+
+//- addProject2.asp
+~ Under 'Yoinking imgs from url string', the loop 
+    repeats until 10 instead of stopping earlier 
+    when it hits project no imgs
+
+//- makeComment.asp/viewProject.asp
+o The date being shown isn't the right date. It 
+    shows some weird timestamp. I think it's to
+    do with how it's being printed.
+    Prints the same number, irrelevant to time
+  - Needed to insert datePost as a string
+
+//- makeComment.asp
+o Check if there's a datePost field in the 
+	 UsersPgCommentsTable.
+  - There is, though no entry for first two comments

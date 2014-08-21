@@ -1,0 +1,43 @@
+/* CSS for Forums */
+
+.forumPost {
+  width: 600px;
+  border: 1px solid black;
+  margin: 5px 0px;
+}
+
+.forumPostLeft {
+  width: 150px;
+  padding: 10px;
+  float: left;
+  border-right: 1px solid black;
+}
+
+.forumPostUserPic {
+  width: 150px;
+  height: 150px;
+  background-color: gray;
+}
+
+.forumPostUserInfo {
+  text-align: center;
+}
+
+.forumPostRight {
+  width: 400px;
+  padding: 10px;
+  float: left;
+}
+
+.forumPostCmtBody {
+  min-height: 154px;
+}
+
+.forumPostMeta {
+  border-top: 1px solid #666;
+}
+
+.forumPostTitle {
+  padding: 10px;
+  font-size: 20px;
+}

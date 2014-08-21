@@ -1,0 +1,379 @@
+/* Style sheet for Assignment 3 */
+
+/* Global classes */
+
+.center {
+  text-align: center;
+}
+
+body {
+  height:100%;
+  margin: 0px;
+  padding: 0px;
+}
+/* -- Styling for Messages -- */
+.msgBox {
+  width: 80%;
+  margin: 10px auto;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+
+}
+
+#errorMsgBox {
+  border-color: #FC5B5B;
+  background-color: #FFD9D9;
+}
+
+#infoMsgBox {
+  border-color: #5497F0;
+  background-color: #D9E9FF;
+}
+
+/* -- Styling for Comments -- */
+.dispCmt {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  margin: 10px 0px;
+  padding: 0px 5px;
+  width: 100%;
+}
+
+.dispCmtBody p {
+  margin: 5px 0px;
+}
+
+.dispCmtMeta {
+  border-top: 1px solid #aaa;
+}
+
+.dispCmtMeta p {
+  margin: 5px 0px;
+  padding-top: 5px;
+}
+/* -- END Styling for Comments -- */
+
+/* Sections that are on every page */
+.pageTitle {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+#wrapper {
+  width: 70%;
+  height: 100%;
+  max-width: 1200px;
+  min-width: 755px;
+  margin: auto;
+  border-left: 1px solid #2F98DE;
+  border-right: 1px solid #2F98DE;
+}
+
+nav, #userTab {
+  height: 76px;
+  background-color: #2F98DE;
+  color: white;
+  font-family: Verdana, Sans-Serif;
+}
+
+#content {
+  padding: 10px 20px;
+  min-height: 300px;
+}
+
+/* BEGIN STYLINNG FOR NAV ROWS (LEFT) */
+#navTray {
+  float: left;
+}
+
+.navRow {
+  height: 38px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navRow li {
+  padding: 10px 5px;
+  float: left;
+  border-right: 1px solid #2986C4;
+}
+
+#navUpper .navAdd {
+  border-right: 1px dashed #2986C4;
+}
+
+.navRow a {
+  text-decoration: none;
+  color: white;
+}
+
+#navUpper li:hover {
+  background-color: #2986C4;
+}
+
+#navUpper {
+  overflow: hidden;
+}
+#navLower {
+  background-color: #454545;
+}
+
+#navMenu {
+  width: 12px;
+  background-color: #2F98DE;
+  border-left: 1px solid #2986C4;
+  padding: 10px 5px;
+  float: right;
+  margin-right: 261px;
+  cursor: pointer;
+}
+
+#navMenu:hover {
+  background-color: #2986C4;
+}
+
+#navMenuBody {
+  display: none;
+  position: absolute;
+  border: 1px solid #2986C4;
+  margin-top: 10px;
+  margin-left: -135px;
+  width: 150px;
+  background-color: #2F98DE;
+  overflow: hidden;
+}
+/* END STYLINNG FOR NAV ROWS (LEFT) */
+
+
+
+/* BEGIN STYLINNG FOR USERTAB (RIGHT) */
+#userTab {
+  float: right;
+  width: 250px;
+  height: 66px;
+  border-left: 1px solid #454545;
+  padding: 5px;
+  margin-top: -76px;
+}
+
+.userTabImg {
+  width: 60px;
+  height: 60px;
+  background-color: gray;
+  float: left;
+  margin: 3px;
+}
+.userTabInfo {
+  margin: 5px;
+  float: left;
+  font-size: 14px;
+}
+
+.userTabInfoOptions {
+  font-size: 12px;
+  margin: 5px;
+  padding-left: 15px;
+}
+/* END STYLINNG FOR USERTAB (RIGHT) */
+
+
+/* BEGIN STYLINNG FOR FOOTER */
+footer {
+  height: 70px;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #454545;
+}
+/* END STYLINNG FOR FOOTER */
+
+/* STYLES FOR Manage.asp */
+#mngUpperBar {
+  height: 50px;
+  border-bottom: 1px solid black;
+}
+
+#mngProjectThumbTray {
+  padding: 10px 0px;
+}
+
+.projectThumb {
+  float: left;
+  width: 190px;
+  height: 210px;
+  padding: 5px;
+  margin: 0px 5px 10px 5px;
+  border: 1px solid black;
+}
+
+.projectThumb p {
+  margin: 0px;
+}
+
+.projectThumbPic {
+  width: 190px;
+  height: 140px;
+  background-color: gray;
+}
+
+/* Style for addProjects, addProjects2 */
+.jsButton {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0px 5px;
+}
+
+/* Style for viewProject.asp */
+.viewProjRight {
+  float: left;
+  width: 150px;
+}
+
+.viewProjLeft {
+  float: left;
+  width: 545px;
+}
+
+.viewProjRow1 {
+  height: 400px;
+}
+
+.viewProjRow2 {
+  height: auto;
+}
+
+.viewProjThumbnails {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 10px;
+}
+
+#viewProjThumbTray {
+  overflow-y: scroll;
+}
+
+#viewProjPicFrame {
+  max-height: 380px;
+  max-width: 500px;
+}
+#viewProjInfo {
+  border-top: 1px solid #2F98DE;
+}
+
+#viewProjImgCmt {
+  border-top: 1px solid #2F98DE;
+}
+
+
+/* -- Styles for comments on viiewProject.asp -- */
+.cmtBody {
+  width: 300px;
+  height: 100px;
+}
+
+.cmtForm {
+  margin: 10px;
+}
+
+/* Style for viewProfile.asp */
+.userInfoModuleTitle {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#userInfoSheet, #userInfoProjects, #userInfoComments {
+  padding: 10px;
+}
+
+#userInfoSheet p, #userInfoProjects p, #userInfoComments p {
+  margin: 0px;
+}
+
+#userInfoSheet {
+  width: 98%;
+  height: 200px;
+  border-bottom: 1px solid #2F98DE;
+}
+
+#userInfoImg {
+  width: 175px;
+  height: 175px;
+  background-color: gray;
+  border: 1px solid gray;
+  float: left;
+}
+
+#userInfoCard {
+  width: 450px;
+  height: 175px;
+  margin-left: 15px;
+  float: left;
+  overflow: auto;
+}
+
+#userInfoProjects {
+  width: 60%;
+  margin: 5px 0px;
+  float: left;
+}
+
+#userInfoComments {
+  width: 34%;
+  margin: 5px 0px;
+  float: left;
+  border-left: 1px solid #2F98DE;
+}
+
+/* Styles for forums.asp */
+.forumModule {
+  width: 500px;
+  padding: 0px 20px;
+  margin: 5px;
+  border: 1px solid black;
+  float: left;
+}
+
+.forumModuleName {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.forumModuleMeta {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Style for search.asp */
+#searchBar {
+  height: 75px;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
+/* Style for default.asp */
+.defRow {
+  height: 200px;
+  border-bottom: 1px solid #2F98DE;
+}
+
+.defBannerButton {
+  height: 100px;
+  width: 150px;
+  background-color: #2F98DE;
+  border-radius: 10px;
+}
+
+.defText {
+  width: 500px;
+  float: left;
+}
+
+.defExample {
+  width: 200px;
+  margin-left: 10px;
+  float: left;
+}
